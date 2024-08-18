@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Picker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>git 
+    <h1 class="animated-text">Photo Picker</h1>
+    <div class="container">
+        <div class="inputs-container">
+            <span id="newfile-display" class="file-display">Text File</span>
+            <button class="browse-btn" onclick="browseFile('newfile')">Browse</button>
+            <input type="hidden" id="newfile">
+        </div>
+        <div class="inputs-container">
+            <span id="folder1-display" class="file-display">Source Folder</span>
+            <button class="browse-btn" onclick="browseFolder('folder1')">Browse</button>
+            <input type="hidden" id="folder1">
+        </div>
+        <div class="inputs-container">
+            <span id="folder2-display" class="file-display">Destination Folder</span>
+            <button class="browse-btn" onclick="browseFolder('folder2')">Browse</button>
+            <input type="hidden" id="folder2">
+        </div>
+        <button class="submit-btn" onclick="handle()">Submit</button>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>
